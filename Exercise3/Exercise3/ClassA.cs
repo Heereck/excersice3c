@@ -84,8 +84,31 @@ namespace Exercise3
 
         }
 
+        public void removespa()
+        {
+            var words1 = new List<string>() { "Text", "Computer", "Automation", " ", "Visual Studio", "Auto Parts", " " };
+           
+
+            var list = words1.Where(i => i != " ");
+
+            foreach(string value in list)
+            {
+                Console.WriteLine(value);
+            }
+
+        } 
+
         public void IntList()
         {
+            var repeatnumbers = new List<int>() { 1, 1, 2, 3, 4, 4, 5, 6, 7, 8, 10 };
+           
+            List<int> printlist = repeatnumbers.Distinct().ToList();
+            Console.WriteLine("Ordered list");
+
+            foreach (int value in printlist)
+            { 
+                Console.WriteLine(value);
+            }
 
         }
     }

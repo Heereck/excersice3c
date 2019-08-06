@@ -48,10 +48,22 @@ namespace Exercise3
             InterImple.PrintHello();
             Console.ReadLine();
 
-            ///Interfaces Implementation
+            ///Order List DESC ASC
             Console.WriteLine("Order List Desc Asc");
             ClassB sortby = new ClassB();
             sortby.ListOrderBy();
+            Console.ReadLine();
+
+            ///Remove spaces
+            Console.WriteLine("Remove spaces");
+            ClassB removespaces = new ClassB();
+            removespaces.removespa();
+            Console.ReadLine();
+
+            ///Remove repeated numbers from a list
+            Console.WriteLine("Remove repeated numbers from a list");
+            ClassB removelist = new ClassB();
+            removelist.IntList();
             Console.ReadLine();
         }
     }
